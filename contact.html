@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Tracewell</title>
+<meta name="description" content="Talk to the Tracewell team about a trial, a migration from your current observability stack, or an enterprise contract.">
+<link rel="canonical" href="https://www.tracewell.example/contact.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%2314181B'/%3E%3Crect x='6' y='9' width='9' height='3' rx='1.5' fill='%230EA5A0'/%3E%3Crect x='6' y='14' width='16' height='3' rx='1.5' fill='%23F2A93B'/%3E%3Crect x='6' y='19' width='6' height='3' rx='1.5' fill='%230EA5A0'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tracewell">
+<meta property="og:title" content="Contact — Tracewell">
+<meta property="og:description" content="Start a trial, ask about migrating from your current tool, or talk pricing with the Tracewell team.">
+<meta property="og:url" content="https://www.tracewell.example/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Tracewell">
+<meta name="twitter:description" content="Start a trial, ask about migrating from your current tool, or talk pricing with the Tracewell team.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tracewell, Inc.",
+  "url": "https://www.tracewell.example/",
+  "logo": "https://www.tracewell.example/assets/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@tracewell.example",
+    "telephone": "+1-415-555-0142",
+    "contactType": "sales"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<site-header current="contact"></site-header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom:24px;">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell us what's slow, we'll show you why</h1>
+      <p class="hero__lede">Whether you want a guided trial, a migration plan from your current tool, or an enterprise quote, a Tracewell engineer replies within one business day.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contact-heading">
+    <div class="container contact-grid">
+      <div>
+        <h2 id="contact-heading" class="visually-hidden">Send us a message</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+              <span class="error-text" id="name-error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" autocomplete="organization" required aria-describedby="company-error">
+              <span class="error-text" id="company-error">Please enter your company name.</span>
+            </div>
+            <div class="field field--full">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+              <span class="error-text" id="email-error">Please enter a valid email address.</span>
+            </div>
+            <div class="field field--full">
+              <label for="message">How can we help? <span class="hint">(mention team size and current tool, if any)</span></label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+              <span class="error-text" id="message-error">Please add a short message.</span>
+            </div>
+          </div>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <h2 style="font-size:1.1rem;">Other ways to reach us</h2>
+        <dl>
+          <dt>Sales</dt>
+          <dd><a href="mailto:hello@tracewell.example">hello@tracewell.example</a></dd>
+          <dt>Support</dt>
+          <dd><a href="mailto:support@tracewell.example">support@tracewell.example</a></dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:+14155550142">+1 (415) 555-0142</a></dd>
+          <dt>Office</dt>
+          <dd>548 Bryant Street, Suite 3, San Francisco, CA 94107</dd>
+          <dt>Hours</dt>
+          <dd>Mon–Fri, 8am–6pm Pacific</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<site-footer></site-footer>
+
+<script src="assets/components.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

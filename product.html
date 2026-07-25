@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product — Tracewell distributed tracing</title>
+<meta name="description" content="How Tracewell traces a request across services, alerts on real regressions, and points your team at the exact span that slowed down.">
+<link rel="canonical" href="https://www.tracewell.example/product.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%2314181B'/%3E%3Crect x='6' y='9' width='9' height='3' rx='1.5' fill='%230EA5A0'/%3E%3Crect x='6' y='14' width='16' height='3' rx='1.5' fill='%23F2A93B'/%3E%3Crect x='6' y='19' width='6' height='3' rx='1.5' fill='%230EA5A0'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tracewell">
+<meta property="og:title" content="Product — Tracewell distributed tracing">
+<meta property="og:description" content="Full-stack tracing, smart alerting, and root-cause assist, explained.">
+<meta property="og:url" content="https://www.tracewell.example/product.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Product — Tracewell distributed tracing">
+<meta name="twitter:description" content="Full-stack tracing, smart alerting, and root-cause assist, explained.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tracewell, Inc.",
+  "url": "https://www.tracewell.example/",
+  "logo": "https://www.tracewell.example/assets/logo.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Tracewell",
+  "description": "Distributed tracing and observability platform that follows a request across services, queues, and databases and highlights the span responsible for latency.",
+  "brand": { "@type": "Brand", "name": "Tracewell" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "0",
+    "highPrice": "499",
+    "offerCount": "3",
+    "url": "https://www.tracewell.example/pricing.html"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<site-header current="product"></site-header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 24px;">
+    <div class="container">
+      <p class="eyebrow">Product</p>
+      <h1>One waterfall. Every service. No blind spots.</h1>
+      <p class="hero__lede">Tracewell attaches a trace ID to a request the moment it arrives and carries it through every service, queue, and database call it touches, so the whole path renders as a single, readable timeline.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="tracing-heading">
+    <div class="container">
+      <div class="tick-divider" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <h2 id="tracing-heading">Full-stack tracing</h2>
+      <p style="max-width:65ch;">Every span — an HTTP call, a database query, a cache lookup, a background job — is recorded with its start time, duration, and the service that owns it. Tracewell lines them up on one timeline, so a slow request three services deep looks the same as one in your own code.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="alerting-heading">
+    <div class="container">
+      <div class="tick-divider" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <h2 id="alerting-heading">Smart alerting</h2>
+      <p style="max-width:65ch;">Instead of a flat threshold on one metric, Tracewell watches the shape of the whole trace. An alert fires when a specific span drifts from its own rolling baseline — so a naturally slow nightly batch job doesn't page anyone, but a checkout call that's suddenly three times slower does.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="rootcause-heading">
+    <div class="container">
+      <div class="tick-divider" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <h2 id="rootcause-heading">Root-cause assist</h2>
+      <p style="max-width:65ch;">When a regression is detected, Tracewell compares the current trace against a week of history and ranks the spans most likely responsible, with a direct link to the code path and the deploy that shipped around the same time.</p>
+    </div>
+  </section>
+
+  <section id="integrations" aria-labelledby="integrations-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Integrations</p>
+        <h2 id="integrations-heading">Drops into the stack you already run</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><h3>Languages</h3><p>Official SDKs for Node.js, Python, Go, Java, and Ruby, plus an OpenTelemetry-compatible collector for everything else.</p></article>
+        <article class="feature-card"><h3>Queues &amp; messaging</h3><p>Automatic span capture for Kafka, RabbitMQ, and SQS, so async work stays part of the same trace as the request that triggered it.</p></article>
+        <article class="feature-card"><h3>Alert routing</h3><p>Sends directly to Slack, PagerDuty, or a webhook of your choice, with the trace link attached to the very first message.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="changelog" aria-labelledby="changelog-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Recently shipped</p>
+        <h2 id="changelog-heading">Changelog highlights</h2>
+      </div>
+      <ul style="max-width:65ch; color:var(--slate); padding-left:1.2em;">
+        <li>Baseline comparisons now account for day-of-week traffic patterns.</li>
+        <li>Kafka consumer spans display lag alongside processing time.</li>
+        <li>Root-cause assist links directly to the responsible deploy.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 id="cta-heading">See your own traces in fifteen minutes</h2>
+        <p>Install the SDK, ship a request, and watch the waterfall render live.</p>
+        <div class="hero__ctas" style="justify-content:center;">
+          <a class="btn btn--primary" href="pricing.html">Start free trial</a>
+          <a class="btn btn--ghost" href="contact.html">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<site-footer></site-footer>
+
+<script src="assets/components.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

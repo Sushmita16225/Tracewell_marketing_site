@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracewell — Distributed tracing for backend teams</title>
+<meta name="description" content="Tracewell shows you exactly where a request slows down across every service, queue, and database — so on-call stays calm and customers never notice.">
+<link rel="canonical" href="https://www.tracewell.example/index.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%2314181B'/%3E%3Crect x='6' y='9' width='9' height='3' rx='1.5' fill='%230EA5A0'/%3E%3Crect x='6' y='14' width='16' height='3' rx='1.5' fill='%23F2A93B'/%3E%3Crect x='6' y='19' width='6' height='3' rx='1.5' fill='%230EA5A0'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tracewell">
+<meta property="og:title" content="Tracewell — Distributed tracing for backend teams">
+<meta property="og:description" content="See where every request slows down, across every service, in one waterfall view.">
+<meta property="og:url" content="https://www.tracewell.example/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tracewell — Distributed tracing for backend teams">
+<meta name="twitter:description" content="See where every request slows down, across every service, in one waterfall view.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tracewell, Inc.",
+  "url": "https://www.tracewell.example/",
+  "logo": "https://www.tracewell.example/assets/logo.png",
+  "description": "Tracewell builds distributed tracing and observability tools for backend engineering teams.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@tracewell.example",
+    "contactType": "sales"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<site-header current="home"></site-header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow">Distributed tracing</p>
+        <h1>See every request, before your customers do.</h1>
+        <p class="hero__lede">Tracewell follows each request across every service, queue, and database call, and lines the spans up so the slow one is obvious in seconds — not after a war room.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="pricing.html">Start free trial</a>
+          <a class="btn btn--ghost" href="product.html">See how tracing works</a>
+        </div>
+      </div>
+
+      <div class="trace-panel" role="img" aria-label="Example request trace showing five spans; the inventory check span is highlighted as unusually slow at 247 milliseconds">
+        <div class="trace-panel__head">
+          <span>trace <strong>#a83f-91c2</strong></span>
+          <span>312ms total</span>
+        </div>
+
+        <div class="trace-row">
+          <span class="trace-row__name">auth.verify</span>
+          <div class="trace-row__track"><div class="trace-row__bar" style="left:0%; width:12%;"></div></div>
+          <span class="trace-row__ms">18ms</span>
+        </div>
+        <div class="trace-row">
+          <span class="trace-row__name">pricing.calc</span>
+          <div class="trace-row__track"><div class="trace-row__bar" style="left:12%; width:14%;"></div></div>
+          <span class="trace-row__ms">22ms</span>
+        </div>
+        <div class="trace-row">
+          <span class="trace-row__name">inventory.check</span>
+          <div class="trace-row__track"><div class="trace-row__bar trace-row__bar--slow" style="left:26%; width:52%;"></div></div>
+          <span class="trace-row__ms">247ms</span>
+        </div>
+        <div class="trace-row">
+          <span class="trace-row__name">db.query orders</span>
+          <div class="trace-row__track"><div class="trace-row__bar" style="left:80%; width:9%;"></div></div>
+          <span class="trace-row__ms">14ms</span>
+        </div>
+        <div class="trace-row">
+          <span class="trace-row__name">notify.customer</span>
+          <div class="trace-row__track"><div class="trace-row__bar" style="left:90%; width:6%;"></div></div>
+          <span class="trace-row__ms">11ms</span>
+        </div>
+
+        <p class="trace-panel__callout">inventory.check is 6&times; slower than its 40ms baseline — likely candidate for the checkout latency spike.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="logo-strip" aria-label="Companies that trust Tracewell">
+      <span class="logo-strip__item">NORTHBEAM</span>
+      <span class="logo-strip__item">CARGOFLOW</span>
+      <span class="logo-strip__item">LEDGERLINE</span>
+      <span class="logo-strip__item">FENWICK RETAIL</span>
+      <span class="logo-strip__item">HARBOR &amp; CO.</span>
+    </div>
+  </div>
+
+  <section aria-labelledby="features-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why teams switch</p>
+        <h2 id="features-heading">Everything you need to find the slow span, fast</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect x="4" y="15" width="7" height="17" rx="1.5" fill="currentColor"/><rect x="14.5" y="7" width="7" height="25" rx="1.5" fill="currentColor" opacity="0.6"/><rect x="25" y="20" width="7" height="12" rx="1.5" fill="currentColor"/></svg>
+          <h3>Full-stack tracing</h3>
+          <p>Follow one request across services, queues, and databases in a single waterfall — no more piecing logs together by hand.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="2.5"/><path d="M18 10v8l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <h3>Smart alerting</h3>
+          <p>Alerts fire on the trace pattern, not a raw metric threshold, so on-call gets one page instead of ten for the same incident.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M6 26 14 16l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Root-cause assist</h3>
+          <p>Tracewell ranks likely causes for a regression by comparing today's traces against last week's baseline automatically.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect x="5" y="6" width="26" height="9" rx="2" stroke="currentColor" stroke-width="2.2"/><rect x="5" y="21" width="12" height="9" rx="2" stroke="currentColor" stroke-width="2.2"/><rect x="20" y="21" width="11" height="9" rx="2" stroke="currentColor" stroke-width="2.2"/></svg>
+          <h3>Team dashboards</h3>
+          <p>Each service owner gets a dashboard scoped to what they own, with shared context when a trace crosses a team boundary.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M9 27V13M18 27V7M27 27v-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <h3>Historical baselines</h3>
+          <p>Every span is compared to its own rolling baseline, so "slow" means slow for that specific call, not an arbitrary number.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect x="6" y="6" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2.2"/><path d="M13 18h10M18 13v10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <h3>15-minute setup</h3>
+          <p>One SDK, one environment variable. Traces start appearing before your coffee finishes brewing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-heading">From request to root cause in three steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Instrument once</h3>
+          <p>Add the Tracewell SDK to your service. It auto-instruments common frameworks, queues, and database drivers.</p>
+        </div>
+        <div class="step">
+          <h3>Watch traces arrive</h3>
+          <p>Every request becomes a waterfall of spans, searchable by service, status code, customer, or duration.</p>
+        </div>
+        <div class="step">
+          <h3>Fix the actual span</h3>
+          <p>Jump straight to the span that regressed, see the code location, and compare it against last week's baseline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="quote-heading">
+    <div class="container">
+      <h2 id="quote-heading" class="visually-hidden">What customers say</h2>
+      <figure class="quote-block">
+        <blockquote>
+          <p>"We went from a 40-minute Slack thread every incident to a two-minute look at the trace. Our on-call rotation actually sleeps now."</p>
+        </blockquote>
+        <footer>— Priya Nandakumar, Head of Platform Engineering, Cargoflow</footer>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 id="cta-heading">Stop guessing where the request went</h2>
+        <p>Free for the first 14 days. No credit card, no sales call required to start.</p>
+        <div class="hero__ctas" style="justify-content:center;">
+          <a class="btn btn--primary" href="pricing.html">Start free trial</a>
+          <a class="btn btn--ghost" href="contact.html">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<site-footer></site-footer>
+
+<script src="assets/components.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
