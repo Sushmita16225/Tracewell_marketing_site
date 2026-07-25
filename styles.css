@@ -257,9 +257,6 @@ section { padding-block: 64px; }
   font-size: 0.82rem; color: var(--slate-light);
 }
 .site-footer__credit a { color: var(--slate-light); text-decoration: underline; }
-
-/* ---------- Visually hidden util ---------- */
-.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .footer {
     background-color: #222;
     color: white;
@@ -279,3 +276,7 @@ section { padding-block: 64px; }
     text-decoration: underline;
     color: #66c2ff;
 }
+
+
+/* ---------- Visually hidden util ---------- */
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
